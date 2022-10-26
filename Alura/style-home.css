@@ -1,0 +1,89 @@
+header{
+    background: rgb(238, 220, 171);
+    padding: 20px 0;
+}
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+/*edição de todo conteúdo presente nas listas*/
+nav{
+    position :absolute;
+    top: 110px;
+    right:0;/*distância da direita ao que eu quero é zero*/
+    
+}
+/* edição das listas*/
+nav li{
+    display: inline;
+    margin: 0 0 0 15px
+}
+/*edição dos conteudos das listas*/
+nav a{
+    text-transform: uppercase;
+    color:black;
+    font-weight: bold ;
+    font-size: 22px;
+    text-decoration: none;
+}
+/* o hover se trata das ações que serão feitas pelas partes de texto do site, no caso quando passa o mouse pelo o link(a) de navegação nav*/
+nav a:hover{
+    color:rgb(173, 59, 59);
+    text-decoration: underline;
+
+}
+.produtos{
+    width: 940 px;
+    margin: 0 auto;
+    padding: 50px 0 ;
+}
+.produtos li:hover{
+    border-color: rgb(173, 59, 59);
+    border-style:dashed;
+}
+/* a função active fala do que acontece ao se clicar em um determinado local*/
+.produtos li:active{
+    border-color: black;
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 5px solid burlywood;/*coloca-se o tamanho, o estilo e a cor da borda*/
+    border-radius: 10px;
+}
+/*h2 quando estiver o mouse no li dos produtos produz....*/
+.produtos li:hover h2 {
+    font-size: 40px;
+}
+/*mechendo no título dos produtos(h2)*/
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+/*mechendo no preço dos produtos*/
+.preco{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px ;
+}
+/*mechendo na descrição dos produtos*/
+.descricao{
+    font-size: 18px;
+    
+}
+footer{
+    text-align:center;
+    background:url("bg.jpg");/*o bg.jpg é a imagem que vai ficar de imagem de fundo no no nosso rodapé, é necessário o uso do comando URL*/
+    padding: 40px 0;
+}
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin: 20px 0 0;
+}

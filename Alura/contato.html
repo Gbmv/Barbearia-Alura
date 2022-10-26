@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <title>Produtos - Barbearia Alura</title>
+        <link rel = "stylesheet" href="reset.css"> <!-- reseta tudo o que é feito-->
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <header><!-- usado para o nosso cabeçalho-->
+            <div class = "caixa">
+                <!-- A função alt é usada para descrever a imagem de algo para aqueles que não conseguem ver-->
+                <h1><img src="logo.png" alt="Logo da barbearia Alura"></h1>
+                <nav>
+                    <ul>
+                        <li><a href = "index.html">Home</a></li><!--o a é para fazer conexões entre páginas distintas, e para isso usa-se um refêrencia que para onde vai levar o link-->
+                        <li ><a href = "produtos.html">Produtos</a></li>
+                        <li ><a href = "contato.html">Contato</a></li> 
+                    </ul>   
+
+                </nav><!--uma tag para navegação, pode fazer alterações no CSS diretamente-->
+             </div>
+        </header>
+
+
+
+        <main>
+            <form><!-- tag de formulário-->
+                <!-- input do tipo texte abre uma caixa de texto-->
+                <!--required torna o preenchimento obrigatório-->
+                <!-- placeholder é o que aparece ante de se preencher as informações-->
+                <label for = "nomeesobrenome">Nome e sobrenome</label><!-- label é a informação sobre a entrada de dados, é necessario colocar o mesmo do for no id para haver essa comunicação entre eles-->
+                <input type = "text" id="nomeesobrenome" class="input-padrao" required >
+
+                <label for = "email">E-mail</label>
+                <input type="email" id = "email" class="input-padrao" required placeholder="seudominio@dominio.com">
+
+                <label for = "telefone">Telefone</label>
+                <input type = "tel" id = "telefone" class="input-padrao" required placeholder="(XX)XXXXX-XXXX">
+
+                <label for="Mensagem">Mensagem</label>
+                <textarea cols="70" rows="20" id="Mensagem" class="input-padrao" required placeholder="..."></textarea><!--cols são as colunas e rows são as linhas-->
+
+                <!--fieldset é um tipo de divisor para formulários-->
+                <!--A tag usada para marcar títulos em campos de formulário são as legend-->
+                <fieldset><!-- input do tipo radio é aquele que apresenta bolinha com a opção ao lado-->
+                    <legend>Como quer que entre em contato?</legend>
+                    <label for="radio-email"><input type="radio" name=contato value="email" id ="radio-email">E-mail</label><!--inputs com bolinhas-->
+                    
+                    
+                    <label for="radio-telefone"><input type="radio" name=contato value="telefone" id ="radio-telefone">Telefone</label>
+                    
+
+                    <label for="radio-whatsapp"><input type="radio" name=contato value="whatsapp" id ="radio-whatsapp" checked>Whatsapp</label>
+                    <!--Deixa ela sempre marcada ao entrar na tela-->
+                    
+                </fieldset>
+
+                <!--Subdividindo em mais uma parte-->
+                <fieldset>
+                    <legend>Qual o horário prefere ser atendido?</legend>
+                    <!--Adicionando um seletor, não se usa o input-->
+                    <select class="opcao">
+                        <!--Adicionando opções-->
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+               </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>
+                    <!-- input do tipo checkbox, é uma caixa que permite se marca-la-->
+                    Gostaria de Receber nossas novidades por email?
+                </label>
+
+                <input type = "submit" value="Enviar formulário" class="enviar"> <!-- esse último input submit terá a função de enviar as informações coletadas para algum servidor ou algo do tipo-->
+            </form>
+            <table>
+                <thead><!-- representa o cabeçalho da tabela-->
+                    <tr><!-- tr representa a linha-->
+                        <th>Dia</th><!-- representa a parte do título da tabela-->
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+               <tbody><!-- parte principal da tabela-->
+                    <tr>
+                        <td>Segunda</td><!--representa o primeiro conteúdo da linhas-->
+                        <td>8h~20h</td><!--representa o segundo conteúdo da linhas-->
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>7h~21h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h~19</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </main>
+
+        <footer><!-- footer é a tag do rodapé-->
+            <img src="logo-branco.png" alt="logo da barbearia Alura">
+            <p class="copyright">&copy; Copyright Barbearia Alura-2022</p>
+        </footer>
+    </body>
+</html>
